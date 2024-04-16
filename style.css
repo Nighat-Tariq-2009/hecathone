@@ -16,11 +16,10 @@ body{
 
 /* ----------navbar---------- */
 #header{
-    /* position: fixed;
-    top: 0; */
     width: 100vw;
-    height: 70px;
+    height: 80px;
     line-height: 70px;
+    border-radius: 80px;
   
   }
   #navbar{
@@ -103,7 +102,7 @@ body{
   }
 /* -------------------------home----------------- */
 .home{
-    width: 80%;
+    width: 100%;
     min-height: 500px;
     margin: auto;
 }
@@ -111,11 +110,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2em;
+    padding: 100px;
 }
 .home_col p{
     padding-top:50px ;
     font-size: 18px;
     text-align: justify;
+
+}
+.home_col h1{
+  font-size: 65px;
 
 }
 .home_col img{
@@ -129,7 +134,7 @@ body{
 }
 .btn{
     gap: 2em;
-    margin-top: 50px;
+    margin-top: 20px;
     /* margin: auto; */
     display: flex;
     justify-content: center;
@@ -140,15 +145,41 @@ body{
 #btn1{
     background-color: orange;
     padding: 5px 20px 5px 20px;
-    border: 1px solid orange; 
+    border: 1px solid black; 
 }
 #btn2{
     background-color: #000;
     padding: 5px 20px 5px 20px;
     border: 1px solid black; 
 }
+.arrow{
+  display: flex;
+  gap: 2em;
+  margin: 30px;
+  
+}
+.r-icon{
+  font-size: 20px;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background: yellow;
+  border-radius: 50%; 
+  color: #fff;
+}
+.l-icon{
+  font-size: 20px;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background-color:black;
+  border-radius: 50%;
+  color: #fff; 
+}
 .about{
-    width: 60%;
+    width: 80%;
     min-height: 500px;
     margin: auto;
     text-align: center;
@@ -162,23 +193,19 @@ body{
 }
 .about_row h1{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
-.about img{
-  text-align: center;
-  
-}
+
 .about_col p{
-    padding-top:50px ;
+    padding :50px 200px 30px 200px  ;
     font-size: 18px;
-    text-align: center;
+    /* text-align: center; */
 
 }
 /* cards */
 .cards{
   width: 100%;
-  /* min-height: 800px; */
   padding-top: 80px;
   margin: auto;
   text-align: center;
@@ -189,26 +216,29 @@ body{
   margin: auto;
  
   align-items: center;
-
- 
-
-
 }
 .cards_col{
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 10px;
 }
 
 
 .card{
-width: 200px;
-border: 5px dotted black;
+width: 250px;
+background-color: rgb(189, 225, 239);
+border: 2px dotted black;
+padding-top: 30px;
+padding-bottom: 30px;
+
 
 
 
 }
+ span{
+  color: orange;
+ } 
 .image img{
   width: 100%;
 }
@@ -225,9 +255,9 @@ border: 5px dotted black;
 }
 button{
   margin-bottom: 20px;
-  background-color: grey;
+  background-color:black;
   color: #fff;
-  border: 1px solid grey;
+  border: 1px solid black;
   padding: 5px;
 }
 .veg{
@@ -245,9 +275,10 @@ button{
 }
 /* -------client------- */
 .client{
-  width: 90%;
+  width: 100%;
   min-height: 600px;
   text-align: center;
+  padding: 50px;
 
 }
 .client_row{
@@ -258,26 +289,42 @@ button{
   padding-top: 80px;
 
 }
-.client_row p{
- color: orange;
- font-size: 20px;
+
+.c_image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
 }
 .para1{
   padding: 50px 200px 50px 200px;
+  color:black;
 }
+.icon2{
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 30px;
+  color:#fff;
+  text-align: center;
+  background: yellow;
+  margin: 30px;
+}
+
 .contact{
   width: 80%;
   min-height: 600px;
   margin: auto;
   text-align: center;
+
 }
+
 form{
   padding-top: 50px;
 }
 input{
-  width: 60%;
-  height: 40px;
-  padding-left: 30px;
+  width: 50%;
+  height: 50px;
   font-size: 24px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -297,13 +344,49 @@ input{
 }
 .footer{
   width: 100%;
-  min-height: 600px;
+  min-height: 400px;
   background-color: #000;
 }
 .footer_row{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
  
+}
+.footer_col a{
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  padding: 2px;
+  text-align: center;
+  gap: 1.5em;
+}
+.mail{
+  font-size: 12px;
+  width: 150px;
+}
+.sub{
+  width: 154px;
+  height: 50px;
+  padding-left: 40px;
+  padding-top: 10px;
+  border: 1px solid yellow;
+  background-color: yellow;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  
+}
+
+
+.footer_col h1{
+  color: #fff;
+}
+
+
+
+.end{
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
 }
 
 @media(max-width:960px){
@@ -329,14 +412,47 @@ input{
   font-size: 14px;
 }
 
+.home_col h1{
+font-size: 35px;
 
 }
-@media(max-width:1020px){
+}
+@media(max-width:900px){
+  .about_col img{
+   width: 500px;
+  }
+  .about_col p{
+    padding :0 ;
+   
+
+}
+}
+@media(max-width:640px){
+  .about_col img{
+   width: 300px;
+  }
+  .about_col p{
+    padding :0;
+ 
+
+}
+}
+@media(max-width:380px){
+  .about_col img{
+   width: 200px;
+  }
+}
+
+@media(max-width:1120px){
   .cards_col{
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+  }
+  .para1{
+    padding:20px ;
+    
   }
 }
 @media(max-width:940px){
@@ -364,5 +480,12 @@ input{
   input{
     font-size: 14px;
     padding: 0;
+  }
+}
+@media(max-width:640px){
+  .footer_row{
+    flex-direction: column;
+    /* padding-top: 30px; */
+    gap: 2em;
   }
 }
