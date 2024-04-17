@@ -209,28 +209,31 @@ body{
   padding-top: 80px;
   margin: auto;
   text-align: center;
-
+  padding: 25px 0px;
 }
 .cards_row{
-  width: 100%;
+  width: 1170px;
   margin: auto;
- 
-  align-items: center;
+
 }
 .cards_col{
-  width: 100%;
+  /* width: 1170px; */
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 
 .card{
-width: 250px;
+flex-basis: 18%;
+margin: 10px 0px;
 background-color: rgb(189, 225, 239);
 border: 2px dotted black;
-padding-top: 30px;
-padding-bottom: 30px;
+box-shadow: 0px 0px 10px 3px lightgray;
+text-align: center;
+padding: 20px 0px;
+
 
 
 
@@ -239,9 +242,9 @@ padding-bottom: 30px;
  span{
   color: orange;
  } 
-.image img{
-  width: 100%;
-}
+/* .image img{
+  width: 50%;
+} */
 .title{
   text-align: center;
 }
@@ -286,7 +289,7 @@ button{
   justify-content: center;
   align-items: center;
   gap: 3em;
-  padding-top: 80px;
+  /* padding-top: 80px; */
 
 }
 
@@ -324,7 +327,7 @@ form{
 }
 input{
   width: 50%;
-  height: 50px;
+  height: 30px;
   font-size: 24px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -445,6 +448,7 @@ font-size: 35px;
 
 @media(max-width:1120px){
   .cards_col{
+    width: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -453,6 +457,11 @@ font-size: 35px;
   .para1{
     padding:20px ;
     
+  }
+  .cards_row{
+    width: 100%;
+    margin: auto;
+  
   }
 }
 @media(max-width:940px){
@@ -467,6 +476,9 @@ font-size: 35px;
   .veg_row p{
     padding: 10px;
   }
+  /* .icon2{
+    display: none;
+  } */
 }
 @media(max-width:300px){
   .veg_row img{
@@ -485,7 +497,7 @@ font-size: 35px;
 @media(max-width:640px){
   .footer_row{
     flex-direction: column;
-    /* padding-top: 30px; */
+    padding: 10px;
     gap: 2em;
   }
 }
